@@ -42,3 +42,37 @@ def diz_oi():
 # Nota_se que ao utilizar a função devemos chamar o nome da função finalizado com os ()
     
 diz_oi()
+
+#Exemplo II
+
+def cantar_parabens():
+    print('Parabéns pra você')
+    print('nesta Data querida')
+    print('Muitas Felicidades')
+    print('Muitos Anos de vida')
+    print('Vivaaa COmunista!!!')
+    
+#Chamando a Função
+
+#cantar_parabens()
+
+#Utilizando a funçao com um agregado
+"""
+for n in range(1,5):
+    cantar_parabens()"""
+    
+    
+'''def dizer():
+    return 'Ola Mundo'
+
+dizer()
+print(dizer())'''
+
+
+# Definindo uma função mais complexa
+
+'jogar Cara ou Coroa'
+
+from funcoes import joga_moeda
+
+joga_moeda()
