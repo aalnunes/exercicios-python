@@ -7,3 +7,6 @@ def joga_moeda():
     return 'Coroa'
 
 print(joga_moeda())
+
+
+'Aln'
