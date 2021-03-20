@@ -71,8 +71,22 @@ print(dizer())'''
 
 # Definindo uma função mais complexa
 
-'jogar Cara ou Coroa'
+''''jogar Cara ou Coroa'
 
 from funcoes import joga_moeda
 
-joga_moeda()
+joga_moeda()'''
+
+
+#   Aqui testerai algumas possibilidades com funções
+
+
+print('Insira seu nome abaixo e veja o que acontece :')
+
+nome = input('Insira seu nome :')
+sobrenome = input('Insira seu sobre nome :')
+
+def mostrar_nome (a= nome,b=sobrenome):
+    print(f' Ola senhor {nome} {sobrenome}')
+
+mostrar_nome()
