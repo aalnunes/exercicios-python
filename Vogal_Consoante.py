@@ -5,6 +5,6 @@ vogal = ['a', 'e', 'i', 'o', 'u']
 
 if letra in vogal:
         print( 'É vogal')
-        
 else:
-    print( 'É consoante')
+        print( 'É consoante')
+    
