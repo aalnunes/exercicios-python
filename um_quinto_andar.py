@@ -12,7 +12,6 @@ def currency (val):
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
     val = locale.currency(val, grouping=True)
     return val
-
     
 if tipo_imovel == 1 and quartos_imovel ==1:
         aluguel_minimo = val_imovel*0.0044
@@ -29,14 +28,37 @@ if tipo_imovel == 1 and quartos_imovel ==3:
         aluguel_maximo = val_imovel *0.00639
         print('O valor do alguel esta entre ' + currency(aluguel_minimo)+' e '+ currency(aluguel_maximo))
         
+
+if tipo_imovel == 1 and quartos_imovel >3:
+        aluguel_minimo = val_imovel*0.00635
+        aluguel_maximo = val_imovel *0.00859
+        print('O valor do alguel esta entre ' + currency(aluguel_minimo)+' e '+ currency(aluguel_maximo))   
+        
+                
 elif tipo_imovel == 2 and quartos_imovel ==1:
         condominio= float(input('Informe o valor do condominio: '))
-        aluguel_minimo = val_imovel*0.00529 + condominio
-        aluguel_maximo = val_imovel *0.00639 + condominio
+        aluguel_minimo = val_imovel*0.00430 + condominio
+        aluguel_maximo = val_imovel *0.0053 + condominio
         print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
         
 elif tipo_imovel == 2 and quartos_imovel ==2:
         condominio= float(input('Informe o valor do condominio: '))
-        aluguel_minimo = val_imovel*0.00599 + condominio
-        aluguel_maximo = val_imovel *0.00699 + condominio
-        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))        
+        aluguel_minimo = val_imovel*0.0046 + condominio
+        aluguel_maximo = val_imovel *0.0057 + condominio
+        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
+
+elif tipo_imovel == 2 and quartos_imovel ==3:
+        condominio= float(input('Informe o valor do condominio: '))
+        aluguel_minimo = val_imovel*0.00521 + condominio
+        aluguel_maximo = val_imovel *0.00631 + condominio
+        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
+        
+elif tipo_imovel == 2 and quartos_imovel > 3:
+        condominio= float(input('Informe o valor do condominio: '))
+        aluguel_minimo = val_imovel*0.0063 + condominio
+        aluguel_maximo = val_imovel *0.00850 + condominio
+        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
+
+else:
+        None
+        
