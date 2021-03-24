@@ -29,9 +29,14 @@ if tipo_imovel == 1 and quartos_imovel ==3:
         aluguel_maximo = val_imovel *0.00639
         print('O valor do alguel esta entre ' + currency(aluguel_minimo)+' e '+ currency(aluguel_maximo))
         
-if tipo_imovel == 2 and quartos_imovel ==1:
-    condominio= float(input('Informe o valor do condominio: '))
-    aluguel_minimo = val_imovel*0.00529 + condominio
-    aluguel_maximo = val_imovel *0.00639 + condominio
-    print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
-    print('O valor do Condominio é : '(currency(condominio))
+elif tipo_imovel == 2 and quartos_imovel ==1:
+        condominio= float(input('Informe o valor do condominio: '))
+        aluguel_minimo = val_imovel*0.00529 + condominio
+        aluguel_maximo = val_imovel *0.00639 + condominio
+        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))
+        
+elif tipo_imovel == 2 and quartos_imovel ==2:
+        condominio= float(input('Informe o valor do condominio: '))
+        aluguel_minimo = val_imovel*0.00599 + condominio
+        aluguel_maximo = val_imovel *0.00699 + condominio
+        print('O valor do alguel esta entre ' + (currency(aluguel_minimo)) + ' e '+ currency(aluguel_maximo))        
