@@ -32,7 +32,7 @@ if tipo_imovel == 1 and quartos_imovel ==3:
 if tipo_imovel == 1 and quartos_imovel >3:
         aluguel_minimo = val_imovel*0.00635
         aluguel_maximo = val_imovel *0.00859
-        print('O valor do alguel esta entre ' + currency(aluguel_minimo)+' e '+ currency(aluguel_maximo))   
+        print('O valor do alguel esta entre. ' + currency(aluguel_minimo)+' e '+ currency(aluguel_maximo))   
         
                 
 elif tipo_imovel == 2 and quartos_imovel ==1:
