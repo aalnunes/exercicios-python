@@ -36,7 +36,7 @@ Opcionais onde  tendo mais de um , cada um separado por virgulas podendo ser opc
 # Definindo minha primeira função
 
 def diz_oi():
-    print('Oi!')
+    print('Oi, motherfucker!')
 
 
 # Nota_se que ao utilizar a função devemos chamar o nome da função finalizado com os ()
